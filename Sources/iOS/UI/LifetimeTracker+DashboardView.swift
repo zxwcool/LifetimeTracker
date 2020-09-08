@@ -68,10 +68,10 @@ typealias GroupModel = (color: UIColor, title: String, groupName: String, groupC
         var frame: CGRect = UIScreen.main.bounds
         let window = UIWindow(frame: .zero)
 
-        if #available(iOS 13.0, *), let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            frame = windowScene.coordinateSpace.bounds
-            window.windowScene = windowScene
-        }
+//        if #available(iOS 13.0, *), let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+//            frame = windowScene.coordinateSpace.bounds
+//            window.windowScene = windowScene
+//        }
 
         window.windowLevel = UIWindow.Level.statusBar
         window.frame =  frame

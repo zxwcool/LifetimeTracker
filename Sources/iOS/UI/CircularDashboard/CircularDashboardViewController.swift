@@ -181,10 +181,10 @@ class CircularDashboardViewController: UIViewController, LifetimeTrackerViewable
         var frame: CGRect = UIScreen.main.bounds
         let popoverWindow = UIWindow(frame: .zero)
 
-        if #available(iOS 13.0, *), let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            frame = windowScene.coordinateSpace.bounds
-            popoverWindow.windowScene = windowScene
-        }
+//        if #available(iOS 13.0, *), let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+//            frame = windowScene.coordinateSpace.bounds
+//            popoverWindow.windowScene = windowScene
+//        }
 
         popoverWindow.windowLevel = UIWindow.Level.normal
         popoverWindow.frame =  frame
